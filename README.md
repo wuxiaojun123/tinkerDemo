@@ -1,0 +1,7 @@
+# tinkerDemo
+
+
+第一步：首先修改tinker_support.gradle文件里面的tinkerId，然后编译出一个正式包，这个是基准包，位置在build/bakApk下
+
+第二步：修改你的bug，然后修改tinker_support.gradle文件里面的tinkerId，并且将baseApkDir的目录对应你的基准包下，这个时候再编译一个补丁包，补丁包是位于outputs/patch/release目录下，这个时候把
+末尾是_7zip.apk的文件上传到bugly的热更新官网，然后开启全量增新就好了
