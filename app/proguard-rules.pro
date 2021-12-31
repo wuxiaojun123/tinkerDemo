@@ -25,3 +25,6 @@
 # tinker混淆规则
 -dontwarn com.tencent.tinker.**
 -keep class com.tencent.tinker.** { *; }
+
+#-applymapping ./app-release-mapping.txt
+#-applymapping ./app-release-R.txt
