@@ -1,10 +1,4 @@
 # tinkerDemo
 
 
-第一步：首先修改tinker_support.gradle文件里面的tinkerId，然后编译出一个正式包，这个是基准包，位置在build/bakApk下
-
-第二步：修改你的bug，然后修改tinker_support.gradle文件里面的tinkerId，并且将baseApkDir的目录对应你的基准包下，
-
-然后执行右边gradle工具栏中的app下边的tinker-support任务下边的buildTinkerPatchRelease任务，这样会编译出一个差分包在你的build/outputs/patch目录下
-
-这个时候把末尾是_7zip.apk的文件上传到bugly的热更新官网，然后开启全量增新就好了
+不依赖远端gradle plugin，试着把plugin放到本地，然后打出来包，这样就可以添加日志知道tinker里面是怎么处理的
